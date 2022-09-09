@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+:root{
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --mainBG: hsl(217, 54%, 11%); 
+    --cardBG: hsl(216, 50%, 16%); 
+    --line: hsl(215, 32%, 27%); 
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    background: var(--mainBG);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 25%;
+    background: var(--cardBG);
+    border-radius: .7rem;
+    padding: 1.2rem;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    border-radius: .7rem;
+}
+.head{
+    position: relative;
+    overflow-y: hidden;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 99%;
+    background: hsla(178, 100%, 50%, 0.474);
+    border-radius: .7rem;
+    opacity: 0;
+}
+.view-icon{
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+}
+.head:hover .overlay{
+    cursor: pointer;
+    opacity: 1;
+}
+.head:hover .view-icon{
+    opacity: 1;
+}
+
+.content{
+    margin: 1rem auto 0;
+    text-align: initial;
+    font-size: 1rem;
+}
+.content > a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--White);
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.content a:hover{
+    color: var(--Cyan);
+}
+.content > p{
+    color: var(--Softblue);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+.eth{
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+}
+.eth img{
+    margin-right: .4rem;
+}
+.eth p{
+    display: flex;
+    align-items: center;
+}
+.p-one{
+    color: var(--Cyan);
+}
+.p-two{
+    color: var(--Softblue);
+}
+.info{
+    border-top: 1px solid hsl(215, 32%, 27%);
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--Softblue);
+    padding-top: 1.5rem;
+    word-spacing: .1rem;
+}
+.info img{
+    width: 2rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+.info a{
+    color: var(--White);
+    text-decoration: none;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width:800px) {
+    .container{
+        width: 50%;
+    }
+}
+@media screen and (max-width:500px) {
+    .container{
+        width: 70%;
+    }
+}
+@media screen and (max-width:375px) {
+    .container {
+        width: 90%;
+    }
+}
