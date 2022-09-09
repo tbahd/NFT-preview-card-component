@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U/hub/nft-preview-card-component-PLQOv-Ga3x)
+- Live Site URL:(https://nftpreviewcardcom.netlify.app/)
 
 ## My process
 
@@ -47,6 +47,9 @@ Users should be able to:
 I learnt how to overlay a div/image with a color and icon.
 
 ```css
+.head{
+    position: relative;
+}
 .overlay{
     position: absolute;
     top: 0;
