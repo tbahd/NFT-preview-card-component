@@ -63,12 +63,13 @@ body{
     text-align: initial;
     font-size: 1rem;
 }
-.content > a{
+
+.content h1 a{
     display: inline-block;
     text-decoration: none;
     color: var(--White);
     margin-bottom: 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 .content a:hover{
